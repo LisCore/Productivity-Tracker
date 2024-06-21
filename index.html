@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="" alt="main-logo">
+        <img src="./photo/" alt="main-logo">
         <!-- This will have Home and About (kind of like the readme) -->
         <nav>
             <div id="nav-bar">
@@ -23,16 +23,20 @@
     <div id="src-content">
         <!-- Holds items for stuff to do for the day -->
         <div class="timer">
-            <button>Start</button>
-            <button>Pause</button>
-            <button>Restart</button>
+            <div class="clock"></div>
+            <div class="btn">
+                <button>Start</button>
+                <button>Pause</button>
+                <button>Restart</button>
+            </div>
             <p class="cycle-counter">Cycles: </p>
         </div>
-        <div>
+        <div class="tasks">
             <label for="item">Enter your tasks for the day:</label>
             <input type="text", name="item" id="item">
             <button>Add Task</button>
         </div>
+        <div class="finished-tasks"></div>
     </div>
     <footer>
         <div>

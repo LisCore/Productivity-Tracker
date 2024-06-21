@@ -1,0 +1,19 @@
+header {
+    display: flex; 
+    background-color: blue;
+    border: white 1px solid; 
+    height: 50px; 
+    margin: auto; 
+    padding: auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    display: flex; 
+    margin: auto; 
+    padding: auto;
+}

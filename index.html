@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productivity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="" alt="main-logo">
+        <!-- This will have Home and About (kind of like the readme) -->
+        <nav>
+            <div id="nav-bar">
+                <ul>
+                    <li><a href="./index.html">HOME</li></a>
+                    <li><a href="./index.html">ABOUT</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="src-content">
+        <!-- Holds items for stuff to do for the day -->
+        <div class="timer">
+            <button>Start</button>
+            <button>Pause</button>
+            <button>Restart</button>
+            <p class="cycle-counter">Cycles: </p>
+        </div>
+        <div>
+            <label for="item">Enter your tasks for the day:</label>
+            <input type="text", name="item" id="item">
+            <button>Add Task</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <!-- <ul>
+                <li>ABOUT</li>
+            </ul> -->
+        </div>
+    </footer>
 </body>
 </html>

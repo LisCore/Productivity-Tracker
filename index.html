@@ -22,14 +22,17 @@
     </header>
     <div id="src-content">
         <!-- Holds items for stuff to do for the day -->
+        <h1 class="pomodoro">Pomodoro Timer</h1>
         <div class="timer">
-            <div class="clock"></div>
-            <div class="btn">
-                <button>Start</button>
-                <button>Pause</button>
-                <button>Restart</button>
+            <div class="clock">
+                <p class="timer" id="timer">25:00</p>
+                <p class="cycle-counter">Cycles: </p>
             </div>
-            <p class="cycle-counter">Cycles: </p>
+            <div class="btn-wrapper">   
+                <button class="pomo-btn" id="start">Start</button>
+                <button class="pomo-btn" id="stop">Stop</button>
+                <button class="pomo-btn" id="reset">Reset</button>
+            </div>
         </div>
         <div class="tasks">
             <label for="item">Enter your tasks for the day:</label>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <img src="./photo/" alt="main-logo">
@@ -24,11 +26,11 @@
         <!-- Holds items for stuff to do for the day -->
         <h1 class="pomodoro">Pomodoro Timer</h1>
         <div class="timer">
-            <div class="clock">
+            <div id="clock">
                 <p class="timer" id="timer">25:00</p>
                 <p class="cycle-counter">Cycles: </p>
             </div>
-            <div class="btn-wrapper">   
+            <div class="btn-wrapper">
                 <button class="pomo-btn" id="start">Start</button>
                 <button class="pomo-btn" id="stop">Stop</button>
                 <button class="pomo-btn" id="reset">Reset</button>
@@ -36,11 +38,15 @@
         </div>
         <div class="tasks">
             <label for="item">Enter your tasks for the day:</label>
-            <input type="text", name="item" id="item">
-            <button>Add Task</button>
+            <input type="text" , name="item" id="item">
+            <button class="taskBtn">Add Task</button>
         </div>
-        <div class="finished-tasks"></div>
     </div>
+    <ol class="task-container">
+
+    </ol>
+    <div class="finished-tasks"></div>
+
     <footer>
         <div>
             <!-- <ul>
@@ -49,4 +55,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -3,91 +3,126 @@ html body {
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
+
 header {
-    display: flex; 
+    display: flex;
     background-color: grey;
-    height: 50px; 
+    height: 50px;
     width: 100%;
     top: 0;
 }
+
 img {
-    margin: auto; 
+    margin: auto;
     padding: auto;
 }
+
 nav {
-    margin: auto; 
+    margin: auto;
     padding: auto;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
-    display: flex; 
+    display: flex;
     gap: 20px;
 }
+
 #src-content {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    margin-top: 10px; 
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
 }
+
 .pomodoro {
-    font-size: 36px; 
+    font-size: 36px;
     margin-bottom: 10px;
     color: #2c3e50;
 }
-.clock {
-    display: flex; 
+
+#clock {
+    display: flex;
     width: 400px;
-    height: 350px; 
-    border: 1px solid white; 
+    height: 350px;
+    border: 1px solid white;
     background-color: red;
     flex-direction: column;
     border-radius: 5%;
 }
+
 #timer {
     font-size: 100px;
     text-align: center;
 }
+
 .cycle-counter {
     text-align: center;
     margin-top: -100px;
 }
+
 button {
-    font-size: 18px; 
-    padding: 10px 20px; 
-    margin: 10px; 
-    color: white; 
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
     background-color: #2c3e50;
-    border: none; 
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     text-transform: uppercase;
     transition: opacity .3s ease-in-out;
 }
+
 button:hover {
     opacity: .7;
 }
+
 .btn-wrapper {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     margin-top: 5px;
 }
-/* .btn-wrapper > .pomo-btn {
-    width: 75px; 
-    height: 25px; 
-    border-radius: 10%;
-} */
+
 #start {
     background-color: #27ae60;
 }
+
 #stop {
     background-color: #c0392b;
 }
+
 #reset {
     background-color: #7f8c8d;
+}
+
+.tasks {
+    flex: 1;
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+    padding: auto;
+    margin-left: 500px;
+}
+
+.task-container li {
+    width: 100%;
+    padding: 10px;
+}
+
+.task-container button {
+    font-size: 10px;
 }
